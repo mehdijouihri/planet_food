@@ -1,0 +1,155 @@
+body {
+    background: black;
+  }
+  
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  .bar-menu {
+    
+    background-color: rgb(244, 244, 206);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+  }
+   .bar-menu li a{
+    color: rgb(212, 83, 83);
+    text-decoration: none;
+  }
+  li{
+    list-style-type: none;
+
+  }
+
+  .main {
+    max-width: 1200px;
+    margin: 0 auto;
+      font-family: 'Patrick Hand', cursive;
+      color: #00fbff;
+  }
+  
+  .cards {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    list-style: none;
+    /* margin: 20px; */
+    padding: 10px;
+    align-items: start;
+
+  }
+  
+  h2 {
+    color: #afbdbd;
+  }
+  
+  .cards_item {
+    display: flex;
+    padding: 1rem;
+    min-height: 600px;
+  }
+  
+  .card_image {
+
+    max-height: 250px;
+  }
+  
+  @media (min-width: 40rem) {
+    .cards_item {
+      width: 50%;
+    }
+  }
+  
+  @media (min-width: 56rem) {
+    .cards_item {
+      width: 33.3333%;
+    }
+  }
+  
+  .card {
+    background-color: #0f1212;
+    border-radius: 0.50rem;
+    box-shadow: 0 20px 40px -14px whitesmoke;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card_content {
+    padding: 0;
+  }
+  
+  .card_title, .card_text{
+    position: relative;
+    padding: 0 1rem;
+    width: fit-content;
+  }
+  
+  .card_title::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 1rem;
+    width: 0%;
+    height: 5px;
+    background: #3bfc00;
+    transition-duration: 0.5s;
+  }
+  
+  .card_title:hover::after {
+    content: "";
+    width: 100%;
+    transition-duration: 0.5s;
+  }
+  
+  .card_title:hover{
+    cursor: pointer;
+  }
+  
+  .card_text p{
+    position: relative;
+    border-radius: 5px;
+  }
+  .card_text p:hover{
+    transition-duration: 0.3s;
+    background: #5e5e5e;
+  }
+  .card_text p::after{
+    position: absolute;
+    top: -10px;
+    right: -50px;
+    width: 60px;
+    height: 30px;
+    background: #FFF;
+    color: #333;
+    box-shadow: 0 0 15px 2px yellow;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    z-index: 1111111111;
+  }
+  .card_text p:hover::after{
+    content: "New";
+  }
+  
+  .priceee {
+      background: yellow;
+      color: black;
+      padding: 5px;
+      border-radius: 30px;
+  }
+  
+  .card_title {
+    font-family: 'Lobster', cursive;
+    color: whitesmoke;
+  }
+
+  /* style de la bare menu  */
+
+  /* bootstrap dropdown hover menu*/
+
+
+  
