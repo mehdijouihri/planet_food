@@ -13,13 +13,21 @@ body {
     background-color: rgb(53, 50, 49);
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 15px;
   }
    .bar-menu li a{
     color: rgb(254, 254, 254);
     text-decoration: none;
+    font-family: 'Patrick Hand', cursive;
   }
+  .bar-menu li a:hover{
+    color: rgb(224, 114, 10);
+    text-decoration: none;
+    font-family: 'Patrick Hand', cursive;
+    
+  }
+
   li{
     list-style-type: none;
 
