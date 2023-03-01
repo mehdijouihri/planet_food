@@ -47,6 +47,9 @@ body {
     align-items: start;
 
   }
+  a{
+    text-decoration: none;
+  }
   
   h2 {
     color: #afbdbd;
