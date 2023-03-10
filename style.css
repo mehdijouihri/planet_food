@@ -1,14 +1,19 @@
 body {
-    background: black;
+    background-image: url(/images/camel-g2fae0cf40_1280.jpg);
   }
   
   
   *,
   *::before,
   *::after {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
   }
-  .bar-menu {
+ 
+  /* .bar-menu {
     
     background-color: rgb(53, 50, 49);
     display: flex;
@@ -31,8 +36,106 @@ body {
   li{
     list-style-type: none;
 
+  } */
+
+  /* style de la partie header bar_menu */
+
+
+
+.navbar{
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+}
+.navbar a {
+  color: white;
+}
+.navbar .logo{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: fixed;
+}
+.navbar .nav-links ul{
+  display: flex;
+}
+.navbar .nav-links ul li {
+  margin: 0 25px;
+}
+
+.navbar .nav-links ul li.active a {
+  color: red;
+  font-weight: bold;  
+}
+
+.menu-hburger{
+  display: none;
+  width: 45px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+
+}
+
+@media screen and (max-width:900px) {
+  .navbar .logo{
+    position:absolute
+  }
+  .cards_item {
+    color: transparent;
+  }
+  .prixsuplement{
+    display: none;
+  }
+  .card_title{
+    display: none;
+  }
+  .navbar{
+    padding: 0%;
+  }
+  .menu-hburger{
+    display: block;
+    right: 10px;
+    top: 10px;
+  }
+  .nav-links{
+    position: absolute;
+    background-color:rgba(130, 128, 128, 0.799);
+    backdrop-filter: blur(.7px);
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100%;
+    transition: all 0.5s ease;
+  }
+  .mobile-menu{
+    margin-left: 0;
   }
 
+  .nav-links ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .navbar .nav-links ul li {
+    margin:25px 0;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 2rem;
+  }
+
+
+}
+
+
+
+
+
+  /* style de la partie body  */
   .main {
     max-width: 1200px;
     margin: 0 auto;
@@ -41,6 +144,7 @@ body {
   }
   
   .cards {
+    margin-top: 6%;
     display: flex;
     flex-wrap: wrap;
     list-style: none;
@@ -124,7 +228,12 @@ footer {
   }
   
 
+/* responsive  header*/
 
+
+
+
+/* responsive body */
 @media (min-width: 40rem) {
     .cards_item {
       width: 50%;
