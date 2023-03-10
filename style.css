@@ -113,7 +113,8 @@ body {
     transition: all 0.5s ease;
   }
   .mobile-menu{
-    margin-left: 0;
+   
+    position: relative;
   }
 
   .nav-links ul{
