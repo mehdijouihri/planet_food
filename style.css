@@ -45,14 +45,26 @@ body {
 .navbar{
   padding: 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 100%;
   box-sizing: border-box;
 }
 .navbar a {
   color: white;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 24px;
+  
 }
+.navbar a:hover {
+  color: yellow;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 26px;
+  text-decoration: underline overline #FF3028;
+  
+}
+
 .navbar .logo{
+  margin-top: -1%;
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -66,7 +78,7 @@ body {
 }
 
 .navbar .nav-links ul li.active a {
-  color: red;
+  color: yellow;
   font-weight: bold;  
 }
 
@@ -105,7 +117,7 @@ body {
     top: 10px;
   }
   .nav-links{
-    position: absolute;
+    position: relative;
     background-color:rgba(130, 128, 128, 0.799);
     backdrop-filter: blur(.7px);
     width: 100%;
@@ -113,18 +125,23 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: -100%;
+    margin-top: -30%;
+    margin-left: -28%;
     transition: all 0.5s ease;
+
+    }
   }
   .mobile-menu{
-   
-    position: relative;
+   margin-left: -467px;
+    position:absolute;
   }
 
   .nav-links ul{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    width: 200%;
+    justify-content: space-between;
     
   }
   .navbar .nav-links ul li {
@@ -132,7 +149,6 @@ body {
     font-family: 'Patrick Hand', cursive;
     font-size: 2rem;
   }
-
 
 }
 
